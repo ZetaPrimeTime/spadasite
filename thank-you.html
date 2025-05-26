@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Spada Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .thank-you-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .thank-you-icon {
+            font-size: 4rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+        .thank-you-container h1 {
+            background: linear-gradient(to bottom, #FFD700, #B8860B, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            position: relative;
+            display: inline-block;
+        }
+        .thank-you-container h1::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, #FFD700, #B8860B, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: blur(8px);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/spade-logo.svg" alt="Spada Technologies Logo">
+                </a>
+                <span class="logo-text">Spada Technologies</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you-container">
+            <i class="fas fa-check-circle thank-you-icon"></i>
+            <h1 data-text="Thank You!">Thank You!</h1>
+            <p>Your message has been successfully sent. We will get back to you as soon as possible.</p>
+            <a href="index.html" class="back-button">Return to Homepage</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Spada Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
